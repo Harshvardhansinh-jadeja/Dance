@@ -1,0 +1,46 @@
+extends base.pug
+
+block script 
+    script(src="/index.js") 
+
+block style 
+    style 
+        include style.css  
+
+block content 
+    section#intro
+        div#con Welcome to Bapu's dance academy 
+        div#con Eat Dance Sleep Code repeat
+        
+    section#mission 
+        
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                .card-img 
+                    img(src="/static/1.jpg", alt="dance")  
+                .card-content 
+                    p This is the best dance academy in rajkot     
+        div.card
+            h3 Dance Way you like
+            div.card-box
+                .card-img 
+                    img(src="/static/2.png", alt="dance")  
+                .card-content 
+                    p You can dance whatever type you want
+        div.card
+            h3 Expert teaching
+            div.card-box
+                .card-img 
+                    img( src="/static/super_dancer.jfif", alt="dance")  
+                .card-content 
+                    p From Geeta Maa You can learn and get the job done
+
+    section#sponser
+        h2 Our Sponsers
+        div#sub   
+            img(src="/static/nach_baliye.jfif", alt="nach")
+            img(src="/static/sponsor_1.png", alt="dance")
+            img(src="/static/sponsor_3png.jfif", alt="sponser")
+            img(src="/static/super_dancer.jfif", alt="dancer")
+
